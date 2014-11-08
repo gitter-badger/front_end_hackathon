@@ -1,8 +1,7 @@
 import DS from 'ember-data';
 
 var Contacts = DS.Model.extend({
-  name: DS.attr('string'),
-  memo: DS.belongsTo('memos', {async: true})
+  name: DS.attr('string')
 });
 
 Contacts.reopenClass({
