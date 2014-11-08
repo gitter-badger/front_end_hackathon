@@ -1,3 +1,20 @@
-<h2 id='title'>Welcome to Ember.js</h2>
+<header class="bar bar-nav">
+  <h1 class="title">FoodChain</h1>
+</header>
 
-{{outlet}}
+<div class="content-padded" style="margin-top: 54px">
+  {{liquid-outlet name="main"}}
+</div>
+
+{{liquid-outlet modal}}
+
+<nav class="bar bar-tab">
+  {{#link-to 'fame' class='tab-item'}}
+    <span class="icon icon-home"></span>
+    <span class="tab-label">Fame</span>
+  {{/link-to}}
+  {{#link-to 'shame' class='tab-item'}}
+    <span class="icon icon-home"></span>
+    <span class="tab-label">Shame</span>
+  {{/link-to}}
+</div>
