@@ -8,7 +8,7 @@
 // @import "bower_components/ratchet/sass/bars";
 // @import "bower_components/ratchet/sass/buttons";
 // @import "bower_components/ratchet/sass/cards";
-// @import "bower_components/ratchet/sass/forms";
+@import "bower_components/ratchet/sass/forms";
 // @import "bower_components/ratchet/sass/modals";
 // @import "bower_components/ratchet/sass/popovers";
 // @import "bower_components/ratchet/sass/push";
@@ -20,6 +20,8 @@
 
 $app-pink-color: #EC948B;
 $app-background-grey: #F8F8F8;
+
+@import "elements/box";
 
 body.ios-7 {
   margin-top: 20px;
