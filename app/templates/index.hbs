@@ -1,12 +1,12 @@
 <ul class="table-view">
-	{{#each}}
-	<li class="table-view-cell media">
-		<a class="navigate-right" href="choose-theater.html" data-transition="slide-in">
-      <div class="media-body">
-        <h2>Rick James</h2>
-        <p>{{body}}</p>
-      </div>
-    </a>
-	</li>
-	{{/each}}
+  {{#each}}
+    <li class="table-view-cell media">
+      {{#link-to 'memo' this classNames='navigate-right'}}
+        <div class="media-body">
+          <h2>Rick James</h2>
+          <p>{{body}}</p>
+        </div>
+      {{/link-to}}
+    </li>
+  {{/each}}
 </ul>
