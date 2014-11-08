@@ -2,7 +2,7 @@ import DS from 'ember-data';
 
 var Memos = DS.Model.extend({
   body: DS.attr('string'),
-  timeStamp: DS.attr('date'),
+  date: DS.attr('string'),
   contact: DS.belongsTo('contacts', { async: true })
 });
 

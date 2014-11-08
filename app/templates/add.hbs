@@ -13,7 +13,7 @@
           optionValuePath="content.id"
           optionLabelPath="content.name" }}
       {{#link-to 'add-contact' classNames="btn add-contact"}}Add{{/link-to}}
-      {{input type="text" placeholder="Date"  value=date       }}
+      {{input type="text" classNames="date-picker" value=date }}
       {{textarea placeholder="What do you want to send?" value=body }}
       <button {{action 'save' }} class="btn btn-positive btn-block">Save Memo</button>
     </form>

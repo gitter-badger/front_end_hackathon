@@ -15,6 +15,7 @@
     "qunit": "~1.15.0",
     "ratchet": "~2.0.2",
     "pikaday": "~1.2.0",
-    "moment": "~2.8.3"
+    "moment": "~2.8.3",
+    "datetimepicker": "xdan/datetimepicker#~2.3.9"
   }
 }

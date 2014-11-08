@@ -16,7 +16,7 @@ export default Ember.Controller.extend({
       var body    = this.get('body');
 
       var memo = this.store.createRecord('memos', {
-        timeStamp: date,
+        date: date,
         body: body,
       });
 

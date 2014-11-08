@@ -18,10 +18,12 @@
 // @import "bower_components/ratchet/sass/toggles";
 // @import "bower_components/ratchet/sass/type";
 
+
 $app-pink-color: #EC948B;
 $app-background-grey: #F8F8F8;
 
 @import "components/contact-picker";
+@import "elements/date-time-picker.scss";
 @import "elements/box";
 
 body.ios-7 {
