@@ -15,15 +15,15 @@ export default Ember.Controller.extend({
       var date    = this.get('date');
       var body    = this.get('body');
 
-      debugger;
-
       var memo = this.store.createRecord('memos', {
         timeStamp: date,
         body: body,
-        contact: this.store.find('contacts', contact)
       });
 
-      memo.save().then((function(_this) {
+      this.store.find('contacts', contact).then(function(contact) {
+        memo.set('contact', contact);
+        memo.save();
+      }).then((function(_this) {
         return function() {
           _this.set('contact', null);
           _this.set('date', null);
@@ -31,9 +31,9 @@ export default Ember.Controller.extend({
           _this.transitionToRoute('memos.index');
         };
       })(this));
-    
+
     }
-  
+
   }
 
 });
