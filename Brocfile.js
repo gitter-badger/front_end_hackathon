@@ -1,6 +1,7 @@
 /* global require, module */
 
 var EmberApp = require('ember-cli/lib/broccoli/ember-app');
+var pickFiles = require('broccoli-static-compiler');
 
 var app = new EmberApp();
 
@@ -18,4 +19,10 @@ var app = new EmberApp();
 // along with the exports of each module as its value.
 app.import("bower_components/ratchet/dist/js/ratchet.js");
 
-module.exports = app.toTree();
+var ratchetFonts = pickFiles('bower_components/ratchet/fonts', {
+   srcDir: '/',
+   files: ['ratchicons.*'],
+   destDir: '/fonts'
+});
+
+module.exports = app.toTree(ratchetFonts);
