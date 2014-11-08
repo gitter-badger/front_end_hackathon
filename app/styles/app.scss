@@ -18,6 +18,9 @@
 @import "bower_components/ratchet/sass/toggles";
 @import "bower_components/ratchet/sass/type";
 
+$app-pink-color: #EC948B;
+$app-background-grey: #F8F8F8;
+
 body.ios-7 {
   margin-top: 20px;
 
@@ -26,3 +29,16 @@ body.ios-7 {
   }
 }
 
+body {
+  background: $app-background-grey;
+}
+
+
+header.bar.bar-nav {
+  background: $app-pink-color;
+  color: white;
+
+  h1 {
+    color: white;
+  }
+}
