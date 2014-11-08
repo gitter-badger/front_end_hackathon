@@ -51,3 +51,4 @@ Make use of the many generators for code, try `ember help generate` for more det
 # Possible Challenges
 
 - Switching to RestAdapter
+- Getting the API URLs correct
