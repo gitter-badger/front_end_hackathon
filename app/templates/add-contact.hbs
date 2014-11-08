@@ -1,0 +1,15 @@
+{{#header-navbar title='Add Contact'}}
+  {{#link-to 'add' classNames='btn btn-link btn-nav pull-left'}}
+    Cancel
+  {{/link-to}}
+{{/header-navbar}}
+
+<div class="content">
+  <div class="box">
+    <form>
+      {{input type="text" placeholder="Name"         value=name  }}
+      {{input type="text" placeholder="Phone Number" value=phone }}
+      <button {{action 'save' }} class="btn btn-positive btn-block">Save Memo</button>
+    </form>
+  </div>
+</div>

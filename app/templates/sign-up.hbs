@@ -1,0 +1,14 @@
+{{header-navbar title="Sign Up"}}
+
+<div class="content">
+  <div class="box">
+    <form>
+      {{input type="text" placeholder="Name"         value=name      }}
+      {{input type="text" placeholder="Phone Number" value=phone     }}
+      {{input type="password" placeholder="Password" value=password  }}
+      <button {{action 'login' }} class="btn btn-positive btn-block">Sign Up</button>
+    </form>
+    {{#link-to 'login'}}Have an account? Log in!{{/link-to}}
+  </div>
+</div>
+

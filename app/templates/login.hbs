@@ -5,8 +5,9 @@
     <form>
       {{input type="text" placeholder="Phone Number" value=phone}}
       {{input type="password" placeholder="Password" value=password  }}
-      <button {{action 'login' }} class="btn btn-positive btn-block">Choose existing</button>
+      <button {{action 'login' }} class="btn btn-positive btn-block">Login</button>
     </form>
+    {{#link-to 'sign-up'}}Need an account? Sign up!{{/link-to}}
   </div>
 </div>
 

@@ -21,6 +21,7 @@
 $app-pink-color: #EC948B;
 $app-background-grey: #F8F8F8;
 
+@import "components/contact-picker";
 @import "elements/box";
 
 body.ios-7 {
@@ -55,4 +56,17 @@ header.bar.bar-nav {
 .content {
   position: static;
   background: $app-background-grey;
+}
+
+form {
+  select {
+    float: left;
+    width: 78%;
+  }
+
+  .add-contact {
+    float: right;
+    width: 20%;
+    margin-left: 2%;
+  }
 }

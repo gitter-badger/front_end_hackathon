@@ -12,6 +12,8 @@ Router.map(function() {
   this.route('add',         { path: 'add' });
   this.route('settings',    { path: 'settings' });
   this.route('login',       { path: 'login' });
+  this.route('sign-up',     { path: '/signup' });
+  this.route('add-contact');
 });
 
 export default Router;

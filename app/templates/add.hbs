@@ -5,6 +5,18 @@
 {{/header-navbar}}
 
 <div class='content'>
-  <h1>Test</h1>
+  <div class="box">
+    <form>
+      {{view "select"
+          content=contacts
+          value=contact
+          optionValuePath="content.id"
+          optionLabelPath="content.name" }}
+      {{#link-to 'add-contact' classNames="btn add-contact"}}Add{{/link-to}}
+      {{input type="text" placeholder="Date"  value=date       }}
+      {{textarea placeholder="What do you want to send?" value=body }}
+      <button {{action 'save' }} class="btn btn-positive btn-block">Save Memo</button>
+    </form>
+  </div>
 </div>
 
