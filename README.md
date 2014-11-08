@@ -45,10 +45,12 @@ Make use of the many generators for code, try `ember help generate` for more det
 # Todo
 
 - [ ] Add Login and Sign Up pages
+- [ ] Add editable fields to detail view?
 - [ ] Add "New Memo" page
 - [ ] Add "New Contact" page/UI
 
 # Possible Challenges
 
 - Switching to RestAdapter
-- Getting the API URLs correct
+- Getting the API URLs correct, since we're not exactly following the JSON:API
+  spec
