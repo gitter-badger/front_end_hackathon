@@ -7,6 +7,11 @@ export default Ember.Route.extend({
     // current user or reject the promise, which will initialize the transition
     // to the login route
     this.session.login()
+    .then((function(_this) {
+      return function(user) {
+        _this.session.set('user', user);
+      };
+    })(this))
     .catch((function(_this) {
       return function() {
        _this.transitionTo('login');

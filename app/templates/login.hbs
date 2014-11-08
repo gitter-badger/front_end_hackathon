@@ -3,9 +3,9 @@
 <div class="content">
   <div class="box">
     <form>
-      {{input type="email" placeholder="Email Address" value=emailAddress }}
+      {{input type="text" placeholder="Phone Number" value=phone}}
       {{input type="password" placeholder="Password" value=password  }}
-      <button class="btn btn-positive btn-block">Choose existing</button>
+      <button {{action 'login' }} class="btn btn-positive btn-block">Choose existing</button>
     </form>
   </div>
 </div>
