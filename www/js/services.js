@@ -22,5 +22,24 @@ angular.module('starter.services', [])
       // Simple index lookup
       return friends[friendId];
     }
+  };
+})
+.factory('Memos', function() {
+  // Might use a resource here that returns a JSON array
+
+  // Some fake testing data
+  var memos = [
+    { id: 0, name: 'This is a memo' },
+    { id: 1, name: 'This is another memo' }
+  ];
+
+  return {
+    all: function() {
+      return memos;
+    },
+    get: function(memoID) {
+      // Simple index lookup
+      return memos[memoID];
+    }
   }
 });
