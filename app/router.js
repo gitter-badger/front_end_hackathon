@@ -6,6 +6,11 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('index',    { path: '/' });
+  this.route('memo',     { path: 'memo/memo_id' });
+  this.route('add',      { path: 'add' });
+  this.route('settings', { path: 'settings' });
+  this.route('login',     { path: 'login' });
 });
 
 export default Router;
