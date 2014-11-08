@@ -1,3 +1,18 @@
-<h1>{{contact.name}}</h1>
-{{body}}
+{{#header-navbar title='Memo'}}
+  {{#link-to 'memos.index' classNames="btn btn-link btn-nav pull-left"}}
+    <span class="icon icon-left-nav"></span>
+    Back
+  {{/link-to}}
+{{/header-navbar}}
+
+<div class="content">
+  <ul class="table-view">
+    <li class="table-view-cell media">
+      <div class="media-body">
+        <h2>{{contact.name}}</h2>
+        <p>{{body}}</p>
+      </div>
+    </li>
+  </ul>
+</div>
 

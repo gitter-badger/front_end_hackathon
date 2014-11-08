@@ -4,19 +4,19 @@
 @import "bower_components/ratchet/sass/mixins";
 @import "bower_components/ratchet/sass/ratchet";
 @import "bower_components/ratchet/sass/base";
-@import "bower_components/ratchet/sass/badges";
-@import "bower_components/ratchet/sass/bars";
-@import "bower_components/ratchet/sass/buttons";
-@import "bower_components/ratchet/sass/cards";
-@import "bower_components/ratchet/sass/forms";
-@import "bower_components/ratchet/sass/modals";
-@import "bower_components/ratchet/sass/popovers";
-@import "bower_components/ratchet/sass/push";
-@import "bower_components/ratchet/sass/segmented-controls";
-@import "bower_components/ratchet/sass/sliders";
-@import "bower_components/ratchet/sass/table-views";
-@import "bower_components/ratchet/sass/toggles";
-@import "bower_components/ratchet/sass/type";
+// @import "bower_components/ratchet/sass/badges";
+// @import "bower_components/ratchet/sass/bars";
+// @import "bower_components/ratchet/sass/buttons";
+// @import "bower_components/ratchet/sass/cards";
+// @import "bower_components/ratchet/sass/forms";
+// @import "bower_components/ratchet/sass/modals";
+// @import "bower_components/ratchet/sass/popovers";
+// @import "bower_components/ratchet/sass/push";
+// @import "bower_components/ratchet/sass/segmented-controls";
+// @import "bower_components/ratchet/sass/sliders";
+// @import "bower_components/ratchet/sass/table-views";
+// @import "bower_components/ratchet/sass/toggles";
+// @import "bower_components/ratchet/sass/type";
 
 $app-pink-color: #EC948B;
 $app-background-grey: #F8F8F8;
@@ -38,7 +38,19 @@ header.bar.bar-nav {
   background: $app-pink-color;
   color: white;
 
-  h1 {
+  h1,
+  a,
+  button {
     color: white;
   }
+
+  a:active {
+    color: darken(white, 5);
+  }
+
+}
+
+.content {
+  position: static;
+  background: $app-background-grey;
 }
