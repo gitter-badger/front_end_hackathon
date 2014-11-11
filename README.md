@@ -1,4 +1,5 @@
 # Memosyne-frontend
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/bravenewprince/front_end_hackathon?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 ## Prerequisites
 
